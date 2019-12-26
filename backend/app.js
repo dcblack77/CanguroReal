@@ -1,6 +1,6 @@
 //Install express server
-require("./config/");
-require("./config/db");
+require("./config/index.js");
+require("./config/db.js");
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
@@ -8,7 +8,7 @@ const app = express();
 
 const bodyParser = require("body-parser");
 
-const api = require("./Routes");
+const api = require("./Routes/index.js");
 
 //parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
