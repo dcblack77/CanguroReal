@@ -1,4 +1,4 @@
-require("../config");
+require("../Config");
 const jwt = require("jsonwebtoken");
 
 // =====================

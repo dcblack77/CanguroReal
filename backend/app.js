@@ -1,6 +1,6 @@
-//Install express server
-require("config/index.js");
-require("config/db.js");
+/* //Install express server
+require("./Config/index.js");
+require("./Config/db.js");
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
@@ -8,7 +8,7 @@ const app = express();
 
 const bodyParser = require("body-parser");
 
-const api = require("Routes/index.js");
+const api = require("./Routes/index.js");
 
 //parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -33,4 +33,4 @@ async function main() {
     console.log("Server on port", process.env.PORT);
 }
 
-main();
+main(); */

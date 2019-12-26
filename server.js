@@ -1,6 +1,6 @@
 //Install express server
-require("./backend/config/");
-require("./backend/config/db");
+require("./backend/Config/");
+require("./backend/Config/db");
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
