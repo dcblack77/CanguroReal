@@ -19,11 +19,11 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Serve only the static files form the dist directory
-//app.use(express.static(__dirname + '/dist/frontCbo'));
+app.use(express.static(__dirname + '/dist/RiojaCanguro'));
 
-/*app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/dist/frontCbo/index.html'));
-});*/
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/dist/RiojaCanguro/index.html'));
+});
 //Configuración Global de rutas
 
 app.use("/api", api);
