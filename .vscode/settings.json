@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/4c5ced6c-884f-46f0-b93b-5b9ef5533fdb/resourceGroups/Canguro_Real/providers/Microsoft.Web/sites/canguroReal",
+    "appService.deploySubpath": ""
+}

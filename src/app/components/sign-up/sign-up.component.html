@@ -1,0 +1,35 @@
+<div class="container-fluid mt-4">
+    <div class="row mh-100vh">
+        <div class="col-10 col-sm-8 col-md-6 col-lg-6 offset-1 offset-sm-2 offset-md-3 offset-lg-0 align-self-center d-lg-flex align-items-lg-center align-self-lg-stretch bg-white p-5 rounded rounded-lg-0 my-5 my-lg-0" id="login-block">
+            <div class="m-auto w-lg-75 w-xl-50">
+                <h2 class="text-info font-weight-light mb-2" style="color: rgb(61,22,81) !important;"><img src="assets/img/logo_125.png">Canguro Real</h2>
+                <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                    <div class="form-group"><label class="text-secondary">First Name</label>
+                        <input type="text" [(ngModel)]="sign.name" name="name" class="form-control" required inputmode="text" /></div>
+                    <div class="form-group"><label class="text-secondary">Last Name</label>
+                        <input type="text" [(ngModel)]="sign.lastName" name="lastName" class="form-control" required inputmode="text" /></div>
+                    <div class="form-group"><label class="text-secondary">DNI</label>
+                        <input type="text" class="form-control" [(ngModel)]="sign.dni" name="dni" required pattern="[0-9]{8}[A-Z]{1}" inputmode="text" /></div>
+                    <div class="form-group"><label class="text-secondary">Born Date</label>
+                        <input type="date" class="form-control" [(ngModel)]="sign.bornDate" name="bornDate" required inputmode="date" /></div>
+                    <div class="form-group"><label class="text-secondary">Phone Number</label>
+                        <input type="text" class="form-control" [(ngModel)]="sign.phone" name="phone" required pattern="[0-9]{9}" inputmode="text" /></div>
+                    <div class="form-group"><label class="text-secondary">Email</label>
+                        <input class="form-control" type="text" [(ngModel)]="sign.email" required email name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}$" inputmode="email" /></div>
+                    <div class="form-group"><label class="text-secondary">Password</label>
+                        <input type="password" [(ngModel)]="sign.password" name="password" class="form-control" required /></div>
+
+                    <button class="btn btn-info mt-2" type="submit" style="background-color: rgb(61,22,81);">Log In</button>
+                </form>
+
+                <p class="mt-3 mb-0" style="color: rgb(61,22,81) !important;"><a class="text-info small" href="#">
+                        Forgot your email or password?
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-end" id="bg-block" style="background-size: cover;background-position: center center;background-image: url('assets/img/fondo_login.jpg');background-color: #401651;">
+            <p class="ml-auto small text-dark mb-2"><em>Photo by&nbsp;</em><a class="text-dark" href="https://unsplash.com/photos/v0zVmWULYTg?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank"><em>Aldain Austria</em></a><br></p>
+        </div>
+    </div>
+</div>
