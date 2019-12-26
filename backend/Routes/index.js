@@ -19,11 +19,11 @@ const {
 //Rutas de los Usuarios
 api.post("/signUp", SignUp);
 api.post("/login", LoginUser);
-api.get("/user", GetUsers);
-api.get("/user/:id", GetUser);
-api.put("/user/:id", UpdateUser);
-api.delete("/user/:id", DeleteUser);
-api.delete("/user/:id/destroy", DestroyUser);
+api.get("/user", verifyToken, GetUsers);
+api.get("/user/:id", verifyToken, GetUser);
+api.put("/user/:id", verifyToken, UpdateUser);
+api.delete("/user/:id", verifyToken, DeleteUser);
+api.delete("/user/:id/destroy", verifyToken, DestroyUser);
 
 const {
     CreateReserv,
