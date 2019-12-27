@@ -12,11 +12,11 @@ import { SignupModel } from "src/app/models/signup.model";
 })
 export class LoginComponent implements OnInit {
 	user: LoginModel;
-	sign: SignupModel;
+	//sign: SignupModel;
 
 	constructor(private auth: AuthService) {
 		this.user = new LoginModel();
-		this.sign = new SignupModel();
+		//this.sign = new SignupModel();
 	}
 
 	ngOnInit() {}

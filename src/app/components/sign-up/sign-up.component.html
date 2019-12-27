@@ -3,19 +3,23 @@
         <div class="col-10 col-sm-8 col-md-6 col-lg-6 offset-1 offset-sm-2 offset-md-3 offset-lg-0 align-self-center d-lg-flex align-items-lg-center align-self-lg-stretch bg-white p-5 rounded rounded-lg-0 my-5 my-lg-0" id="login-block">
             <div class="m-auto w-lg-75 w-xl-50">
                 <h2 class="text-info font-weight-light mb-2" style="color: rgb(61,22,81) !important;"><img src="assets/img/logo_125.png">Canguro Real</h2>
-                <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+                <form (ngSubmit)="singUp(f)" #f="ngForm">
                     <div class="form-group"><label class="text-secondary">First Name</label>
                         <input type="text" [(ngModel)]="sign.name" name="name" class="form-control" required inputmode="text" /></div>
                     <div class="form-group"><label class="text-secondary">Last Name</label>
                         <input type="text" [(ngModel)]="sign.lastName" name="lastName" class="form-control" required inputmode="text" /></div>
                     <div class="form-group"><label class="text-secondary">DNI</label>
-                        <input type="text" class="form-control" [(ngModel)]="sign.dni" name="dni" required pattern="[0-9]{8}[A-Z]{1}" inputmode="text" /></div>
+                        <input type="text" class="form-control" [(ngModel)]="sign.dni" name="dni" required inputmode="text" /></div>
+                    <!-- <div class="form-group"><label class="text-secondary">DNI</label>
+                        <input type="text" class="form-control" [(ngModel)]="sign.dni" name="dni" required pattern="[0-9]{8}[A-Z]{1}" inputmode="text" /></div> -->
                     <div class="form-group"><label class="text-secondary">Born Date</label>
                         <input type="date" class="form-control" [(ngModel)]="sign.bornDate" name="bornDate" required inputmode="date" /></div>
                     <div class="form-group"><label class="text-secondary">Phone Number</label>
-                        <input type="text" class="form-control" [(ngModel)]="sign.phone" name="phone" required pattern="[0-9]{9}" inputmode="text" /></div>
+                        <input type="text" class="form-control" [(ngModel)]="sign.phone" name="phone" required inputmode="text" /></div>
+                    <!-- <input type="text" class="form-control" [(ngModel)]="sign.phone" name="phone" required pattern="[0-9]{9}" inputmode="text" /></div> -->
                     <div class="form-group"><label class="text-secondary">Email</label>
-                        <input class="form-control" type="text" [(ngModel)]="sign.email" required email name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}$" inputmode="email" /></div>
+                        <input class="form-control" type="text" [(ngModel)]="sign.email" required email name="email" inputmode="email" /></div>
+                    <!-- <input class="form-control" type="text" [(ngModel)]="sign.email" required email name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}$" inputmode="email" /></div> -->
                     <div class="form-group"><label class="text-secondary">Password</label>
                         <input type="password" [(ngModel)]="sign.password" name="password" class="form-control" required /></div>
 

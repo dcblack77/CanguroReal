@@ -20,12 +20,15 @@ export class SignUpComponent implements OnInit {
     console.log('object in signup');
   }
 
-  onSubmit(form: NgForm) {
-    console.log(form);
-    if (form.invalid) {
-      console.log('form invalid');
+  	singUp(form: NgForm) {
+		console.log(form);
+		console.log(this.sign);
+		if (form.invalid) {
+			console.log('form invalid');
 			return;
 		}
+		
+	
 
 		Swal.fire({
 			allowOutsideClick: false,
@@ -71,7 +74,7 @@ export class SignUpComponent implements OnInit {
 		);
 
 		this.sign = new SignupModel();
-  }
+  	}
 
   login(form: NgForm) {
 		
