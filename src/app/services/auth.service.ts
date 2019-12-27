@@ -24,7 +24,7 @@ export class AuthService {
 		if (isDevMode) {
 			this.url = `http://localhost/api/`;
 		} else {
-			this.url = "/api/";
+			this.url = "https://canguroreal.herokuapp.com/api/";
 		}
 	}
 
