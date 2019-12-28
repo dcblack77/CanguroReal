@@ -22,9 +22,9 @@ export class AuthService {
 		console.log();
 		console.log(window.location.origin);
 		if (isDevMode) {
-			this.url = `http://localhost/api/`;
+			this.url = `https://canguapi.herokuapp.com/api/`;
 		} else {
-			this.url = "https://canguroreal.herokuapp.com/api/";
+			this.url = "https://canguapi.herokuapp.com/api/";
 		}
 	}
 
